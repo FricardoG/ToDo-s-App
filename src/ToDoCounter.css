@@ -1,0 +1,11 @@
+.toDoCounter{
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-weight: normal;
+}
+
+.toDoCounter span{
+  font-weight: bold;
+}
