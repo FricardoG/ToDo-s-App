@@ -5,15 +5,16 @@ import './ToDoItem.css';
 function ToDoItem(props){
   return(
     <li className="toDoItem">
-      <CompleteIcon></CompleteIcon>
-      {/* <span className={`icon icon-check ${props.completed && "icon-check-active"}`}
-            onClick={props.onComplete}
-      >V</span> */}
+      <CompleteIcon
+        completed={props.completed}
+        onComplete={props.onComplete}
+      ></CompleteIcon>
+
       <p className={`toDoItem-p ${props.completed && "toDoItem-p-completed"}`}>{props.text}</p>
-      <DeleteIcon></DeleteIcon>
-      {/* <span className='icon icon-delete'
-            onClick={props.onDelete}
-      >X</span> */}
+      
+      <DeleteIcon
+        onDelete={props.onDelete}
+      ></DeleteIcon>
     </li>
   );
 }
